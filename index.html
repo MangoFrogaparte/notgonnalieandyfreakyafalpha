@@ -160,47 +160,26 @@
   </head>
   <body>
     <h1 id=h11>I know your watching andy</h1>
-    <button id=button1 onclick="goToFriday()">
+    <button id=button1 onclick="redirectToNewTab('Friday.html')">
     </button>
-    <button id=button2 onclick="goTo2048()">
+    <button id=button2 onclick="redirectToNewTab('2048.html')">
     </button>
-    <button id=button3 onclick="goToSnow()">
+    <button id=button3 onclick="redirectToNewTab('Snow.html')">
     </button>
-    <button id=button4 onclick="goToFBros()">
+    <button id=button4 onclick="redirectToNewTab('FBros.html')">
     </button>
-    <button id=button5 onclick="goToWheels()">
+    <button id=button5 onclick="redirectToNewTab('Wheels.html')">
     </button>
-    <button id=button6 onclick="goToEagler()">
+    <button id=button6 onclick="redirectToNewTab('Eagler.html')">
     </button>
-    <button id=button7 onclick="goToProxy()">
+    <button id=button7 onclick="redirectToNewTab('Prozy.html')">
     </button>
     <h1 id=h12>Helios Proxy</h1>
     <button id=button8 onclick="goTosm63()">
     </button>
     <script>
-        function goToFriday() {
-            window.location.replace("Friday.html");
-        }
-        function goTo2048() {
-            window.location.replace("2048.html");
-        }
-        function goToSnow() {
-            window.location.replace("Snow.html");
-        }
-        function goToFBros() {
-            window.location.replace("FBros.html");
-        }
-        function goToWheels() {
-            window.location.replace("Wheels.html");
-        }
-        function goToEagler() {
-            window.location.replace("Eagler.html");
-        }
-        function goToProxy() {
-            window.location.replace("Proxy.html");
-        }
-        function goTosm63() {
-            window.location.replace("sm63.html");
+        function redirectToNewTab(url) {
+          window.open(url, '_blank');
         }
     </script>
   </body>
