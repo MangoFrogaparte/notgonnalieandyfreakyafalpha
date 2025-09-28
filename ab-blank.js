@@ -11,6 +11,7 @@ function abBlank(url, title) {
   frame.src = url;
   blank.body.appendChild(frame);
 }
-const url = window.location.origin;
+const ogurl = window.location.origin;
+const url = ogurl+"/notgonnalieandyfreakyafalpha"
 abBlank(url, "");
 window.close();
