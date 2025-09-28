@@ -84,22 +84,11 @@
         height: 115%;
         text-align: center;
       }
-  #button5 {
-        font-family: sans-serif;
-        color: white;
-        background-color: purple;
-        border: none;
-        display: block; 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        background-image: url(https://static.wikia.nocookie.net/b90f8a6c-ee59-4d0f-9cb3-7884d23bc7bb/scale-to-width/370);
-        background-repeat: no-repeat;
-        background-size: 370px 370px;
-        background-position: center; 
-      }
-
+  #img1 {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
   </style>
   </head>
   <body>
@@ -112,8 +101,8 @@
     </button>
     <button id='button4' onclick="redirectToNewTab('proxy/rammerhead.html')">
     </button>
-    <button id='button5'>
-    </button>
+    <img id='img1' src=https://static.wikia.nocookie.net/b90f8a6c-ee59-4d0f-9cb3-7884d23bc7bb/scale-to-width/370>
+    </img>
     <script>
         function redirectToNewTab(url) {
           window.open(url, '_blank');
