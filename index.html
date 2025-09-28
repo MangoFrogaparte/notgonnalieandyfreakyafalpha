@@ -94,25 +94,12 @@
   </head>
   <body>
     <h1 id=h11>I know your watching andy</h1>
-    <button id='button1' onclick="aboutBlank()">
+    <button id='button1' onclick="redirectToNewTa(index.html)">
     </button>
     <script>
         function redirectToNewTab(url) {
           window.open(url, '_blank');
         }
-        function aboutBlank() {
-            var script = document.createElement('script');
-            script.src = 'ab-blank.js';
-            script.type = 'text/javascript';
-            script.onload = function() {
-              console.log('ab-blank.js has loaded and executed successfully.');
-            };
-            script.onerror = function() {
-              console.error('Error loading ab-blank.js.');
-            };
-            document.body.appendChild(script);
-          }
-          }
     </script>
   </body>
 </html>
