@@ -18,7 +18,6 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 8px;
-        cursor: pointer;
       }
 
     #button2 {
@@ -72,21 +71,6 @@
         background-position: center;
         border-radius: 8px;
       }
-  #button5 {
-        font-family: "Comic Sans MS";
-        text-align: center;
-        transform: scale(1.1);
-        color: black;
-        background-color: white;
-        border: none;
-        cursor: pointer;
-        width: 80px;
-        height: 65px;
-        position: absolute;
-        top: 170px;
-        left: 10px;
-        border-radius: 8px;
-      }
   body {
       background-color: black;
       color: black;
@@ -95,11 +79,20 @@
   </head>
   <body>
     <h1 id=h11>I know your watching andy</h1>
-    <button id='button1' onclick="redirectToNewTab('blank.html')">
+    <button id='button1'>
+    </button>
+    <button id='button2' onclick="SwitchFile('h.html')">
+    </button>
+    <button id='button3' onclick="SwitchFile('g.html')">
+    </button>
+    <button id='button4' onclick="redirectToNewTab('rammerhead.html')">
     </button>
     <script>
         function redirectToNewTab(url) {
           window.open(url, '_blank');
+        }
+        function SwitchFile(url) {
+          window.location.href = url;
         }
     </script>
   </body>
