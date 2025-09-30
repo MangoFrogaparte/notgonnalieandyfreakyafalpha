@@ -13,7 +13,7 @@
         position: absolute;
         top: 0px;
         left: -15px;
-        background-color: black;
+        background-color: transparent;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -30,7 +30,7 @@
         height: 65px;
         position: absolute;
         top: 10px;
-        left: 10px;
+        left: -500px; /*Set to 10*/
         background-image: url(https://cdn-icons-png.flaticon.com/512/61/61972.png);
         background-repeat: no-repeat;
         background-size: 64px 65px;
@@ -47,7 +47,7 @@
         height: 65px;
         position: absolute;
         top: 90px;
-        left: 10px;
+        left: -500px;
         background-image: url(https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/app-icons/game-controller-3pkk2v8xc02k832s3zth4n.png/game-controller-4gxlqyxjwywg56ji94dm3a.png?_a=DATAg1AAZAA0);
         background-repeat: no-repeat;
         background-size: 70px 72px;
@@ -64,7 +64,7 @@
         height: 65px;
         position: absolute;
         top: 170px;
-        left: 10px;
+        left: -500px;
         background-image: url(https://www.svgrepo.com/show/356535/search-button.svg);
         background-repeat: no-repeat;
         background-size: 69px 55px;
@@ -92,6 +92,15 @@
         }
         function SwitchFile(url) {
           window.location.href = url;
+        }
+        function Hide() {
+          let count1 = 0;
+          document.getElementById('button1').style.left = '10px';
+          let px = 10;
+          let pxstring = "px"
+          while (count1 > -135) {
+            document.getElementById('button1').style.left = (px - count1) + pxstring;
+          }
         }
     </script>
   </body>
