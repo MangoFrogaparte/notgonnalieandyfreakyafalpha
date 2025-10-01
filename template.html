@@ -95,10 +95,11 @@
         }
         function Hide() {
           let count1 = 0;
-          document.getElementById('button1').style.left = '10px';
+          document.getElementById('button1').style.left = '-15px';
           let px = 10;
           let pxstring = "px"
-          while (count1 > -135) {
+          while (px - count1 > -135) {
+            count1++;
             document.getElementById('button1').style.left = (px - count1) + pxstring;
           }
         }
