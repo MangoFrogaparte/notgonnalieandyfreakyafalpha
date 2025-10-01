@@ -93,6 +93,9 @@
         function SwitchFile(url) {
           window.location.href = url;
         }
+        function delay(time) {
+          return new Promise(resolve => setTimeout(resolve, time));
+        }
         function Hide() {
           let count1 = 0;
           document.getElementById('button1').style.left = '-15px';
@@ -101,6 +104,7 @@
           while (px - count1 > -135) {
             count1++;
             document.getElementById('button1').style.left = (px - count1) + pxstring;
+            await delay(100)
           }
         }
     </script>
