@@ -93,26 +93,6 @@
         function SwitchFile(url) {
           window.location.href = url;
         }
-        function delay(time) {
-          return new Promise(resolve => setTimeout(resolve, time));
-        }
-        async function Hide() {
-          let count1 = 0;
-          const button = document.getElementById('button1');
-          let px = 10;
-          const pxstring = "px";
-          if (button) {
-            if (window.getComputedStyle(button).position === 'static') {
-              button.style.position = 'relative';
-            }
-
-            while (px - count1 > -135) {
-              count1++;
-              button.style.left = (px - count1) + pxstring;
-              await delay(100);
-                }
-              }
-            }
     </script>
   </body>
 </html>
