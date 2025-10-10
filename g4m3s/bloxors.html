@@ -1,90 +1,33 @@
 
-<!doctype html>
+<Module>
+
+
+<!-- Ultimate Game Stash file--> 
+<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+
+
+
+<Module>
+<ModulePrefs title="Google.com" />
+<Content type="html"><![CDATA[
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Bloxorz</title>
-        <link rel="canonical" href="https://www.twoplayergames.org/game/bloxorz">
-        <link href="/dist/gameframe-c11d10c8.css" rel="stylesheet">
-    <link rel="preconnect" href="//pagead2.googlesyndication.com" crossorigin>
-<script>
-    if (window.self === window.top) {
-        (()=>{let e="__tcfapiLocator",t=[],a=window,n=a,s,c;for(;n;){try{if(n.frames[e]){s=n;break}}catch(o){}if(n===a.top)break;n=a.parent}s||(!function t(){let n=a.document,s=!!a.frames[e];if(!s){if(n.body){let c=n.createElement("iframe");c.style.cssText="display:none",c.name=e,n.body.appendChild(c)}else setTimeout(t,5)}return!s}(),a.__tcfapi=function e(...a){if(!a.length)return t;"setGdprApplies"===a[0]?a.length>3&&2===parseInt(a[1],10)&&"boolean"==typeof a[3]&&(c=a[3],"function"==typeof a[2]&&a[2]("set",!0)):"ping"===a[0]?"function"==typeof a[2]&&a[2]({gdprApplies:c,cmpLoaded:!1,cmpStatus:"stub"}):t.push(a)},a.addEventListener("message",function e(t){let a="string"==typeof t.data,n={};if(a)try{n=JSON.parse(t.data)}catch(s){}else n=t.data;let c="object"==typeof n&&null!==n?n.__tcfapiCall:null;c&&window.__tcfapi(c.command,c.version,function(e,n){let s={__tcfapiReturn:{returnValue:e,success:n,callId:c.callId}};t&&t.source&&t.source.postMessage&&t.source.postMessage(a?JSON.stringify(s):s,"*")},c.parameter)},!1))})();
-        (function() {
-            var s = document.createElement("script");
-            s.src = "https://cmp.setupcmp.com/cmp/cmp/cmp-v1.js";
-            s.async = true;
-            s.setAttribute("data-prop-stpd-cmp-id", "8327");
-            document.head.appendChild(s); // or document.body
-        })();
-    } else {
-        !function(){for(var a,t=window,e={};t;){try{if(t.frames.__tcfapiLocator){a=t;break}}catch(a){}if(t===window.top)break;t=t.parent}window.__tcfapi=function(t,n,r,c){if(a){var o=Math.random()+"",i={__tcfapiCall:{command:t,parameter:c,version:n,callId:o}};e[o]=r,a.postMessage(i,"*")}else r({cmpLoaded:!1,cmpStatus:"stub",gdprApplies:void 0,msg:"iFrame Stub: CMP (__tcfapiLocator) not found"},!1)},window.addEventListener("message",(function(a){var t={};try{t="string"==typeof a.data?JSON.parse(a.data):a.data}catch(a){}var n=t.__tcfapiReturn;n&&"function"==typeof e[n.callId]&&(e[n.callId](n.returnValue,n.success),e[n.callId]=null)}),!1)}();
-    }
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LSBVFHP4VG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LSBVFHP4VG');
-</script>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AndreajnRcm4/b398dl2h74v@9a23fbb2373d743a564873251cbb57736ebc1f73/style.css" type="text/css" />
+    
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/gh/u-cvlassrom-y/google@main/ruffle.js"></script>
 
-    <div id="play">
-        <div class="gameframe-content">
-            <div class="game-item">
-                <div class="image">
-                    <img draggable="false" srcset="https://images.twoplayergames.org/files/games/o6/bloxorz.jpg?auto=format&amp;w=100 1x, https://images.twoplayergames.org/files/games/o6/bloxorz.jpg?auto=format&amp;w=200 2x" src="https://images.twoplayergames.org/files/games/o6/bloxorz.jpg?auto=format&amp;w=100" width="100"
-     height="75" alt="Bloxorz"/>                </div>
-            </div>
-            <h1 class="game-title">Bloxorz</h1>
-            <div class="game-play">
-                <a id="button-play" class="play-button-disabled" href="#"><span class="icon"></span><span class="title">Play</span></a>
-            </div>
-            <div class="game-play-info visibility-hidden">Watch an ad to play this game.</div>
-        </div>
-    </div>
-
-    <div id="game-container" style="display: none"></div>
-
-    <div id="ima-container" style="display: none">
-        <div id="non-linear-text" style="display: none;"></div>
-        <div id="ad-container"></div>
-    </div>
-
-    <div id="error" style="display: none;">
-        <div class="error-code"></div>
-        <div class="error-message"></div>
-        <div class="error-raw"></div>
-    </div>
-<script>
-    window.siteConfig = {"domain":"twoplayergames.org","origin":{"desktop":"https:\/\/www.twoplayergames.org","mobile":"https:\/\/m.twoplayergames.org","files":"https:\/\/files.twoplayergames.org","images":"https:\/\/images.twoplayergames.org"},"gamesDir":"files\/games"}
-</script>
-    <!--
-Direct embed file:
-https://files.twoplayergames.org/files/games/o6/bloxorz.swf
-
-Our beloved CDN:
-tinyurl.com/TPG-CDN
--->
-<script>
-    window.gameData = {"id":2696,"title":"Bloxorz","slug":"bloxorz","imageFile":"o6\/bloxorz.jpg","url":"https:\/\/www.twoplayergames.org\/game\/bloxorz","embed":"https:\/\/files.twoplayergames.org\/files\/games\/o6\/bloxorz.swf","embedBase":"https:\/\/files.twoplayergames.org\/files\/games\/o6","embedFrame":"https:\/\/www.twoplayergames.org\/embed\/bloxorz","isExternal":false,"preAd":true,"rating":"3.4","embedType":"flash"}
-</script>
-    <script>
-    window.gameEmbed = {"ruffleJs":"\/dist\/ruffle\/ruffle.3e6e1b48.js"}
-</script>
-    <script async
-            data-ad-client="ca-pub-8349441957149316"
-            data-ad-frequency-hint="30s"
-            data-ad-channel="5136463917"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            crossorigin="anonymous"></script>
-    <script src="https://www.twoplayergames.org/dist/gameframe.h5-ac9cec7d.js"></script>
-
+<object width="100%" height="100%">
+    <param name="movie" value="https://cdn.jsdelivr.net/gh/illusionTBA/React-Ruffle@f37551ff7c55cc61002445a0f1e334742f6832e4/public/swf/Bloxors.swf">
+    <embed src="https://cdn.jsdelivr.net/gh/illusionTBA/React-Ruffle@f37551ff7c55cc61002445a0f1e334742f6832e4/public/swf/Bloxors.swf" width="100%" height="100%">
 </body>
 </html>
+]]></Content>
+</Module>
+clbloxorz.html
+
+Displaying clbloxorz.html.
