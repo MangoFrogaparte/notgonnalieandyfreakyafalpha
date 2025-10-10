@@ -1,43 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>bloxors - Truffled</title>
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #000;
-}
-iframe {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-}
-#truffled-logo {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    z-index: 9999;
-}
-</style>
-</head>
-<body>
-<iframe src="https://truffled.lol/games/bloxors/index.html" allowfullscreen></iframe>
-<a href="https://truffled.lol" target="_blank">
-    <img id="truffled-logo" src="https://truffled.lol/png/logo.png" alt="Logo">
-</a>
-
-<script type="text/javascript" src="//pl25308818.revenuecpmgate.com/1e/ca/0b/1eca0b39c37917b7f099788bd311eae3.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bloxors | 3kh0</title>
+    <link rel="shortcut icon" type="https://truffled.lol/games/bloxors/favicon.ico" href="favicon.ico">
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        "publicPath": undefined,
+        "polyfills": true,
+        "autoplay": "auto",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "black",
+        "letterbox": "fullscreen",
+        "warnOnUnsupportedContent": true,
+        "contextMenu": true,
+        "showSwfDownload": false,
+        "upgradeToHttps": window.location.protocol === "https:",
+        "maxExecutionDuration": {"secs": 15, "nanos": 0},
+        "logLevel": "error",
+        "base": null,
+        "menu": true,
+        "salign": "",
+        "scale": "showAll",
+        "quality": "high",
+      };
+    </script>
+  </head>
+  <body style="background-color:black;">
+    <center>
+      <div id="container" style="height:100%;width:100%;"></div>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+          const ruffle = window.RufflePlayer.newest();
+          const player = ruffle.createPlayer();
+          const container = document.getElementById("container");
+          container.appendChild(player);
+          player.style.height = "600px";
+          player.style.width = "937px";
+          player.load("bloxors.swf");
+      });
+    </script>
+    <script src="https://truffled.lol/games/bloxors/ruffle/ruffle.js"></script>
+    <script src="https://truffled.lol/js/main.js"></script>
+    </center>
+  </body>
 </html>
